@@ -450,9 +450,6 @@ rule-providers:
 # 规则
 # ===============================================
 rules:
-  # 广告拦截
-  - RULE-SET,reject,🛑 广告拦截
-
   # ===== 自定义规则（优先级最高）=====
   - RULE-SET,gemini,💎 Gemini
   - RULE-SET,ai-extra,🤖 OpenAI
@@ -497,6 +494,9 @@ rules:
 
   # GeoIP 中国
   - GEOIP,CN,🎯 直连
+
+  # 广告拦截（低优先级，避免误杀）
+  - RULE-SET,reject,🛑 广告拦截
 
   # 兜底规则
   - MATCH,🚀 节点选择
