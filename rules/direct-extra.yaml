@@ -1,28 +1,6 @@
 # 自定义直连规则
+# 在这里添加你需要直连的域名
 payload:
-  # 下载服务（P2P、直链下载等走直连更快）
-  - PROCESS-NAME,aria2c
-  - PROCESS-NAME,fdm
-  - PROCESS-NAME,Folx
-  - PROCESS-NAME,NetTransport
-  - PROCESS-NAME,Thunder
-  - PROCESS-NAME,Transmission
-  - PROCESS-NAME,uTorrent
-  - PROCESS-NAME,qbittorrent
-  - PROCESS-NAME,WebTorrent
-
-  # 代理软件本身
-  - PROCESS-NAME,v2ray
-  - PROCESS-NAME,ss-local
-  - PROCESS-NAME,privoxy
-  - PROCESS-NAME,trojan
-  - PROCESS-NAME,trojan-go
-  - PROCESS-NAME,naive
-  - PROCESS-NAME,CloudflareWARP
-  - PROCESS-NAME,Cloudflare WARP
-
-  # IP 检测服务
-  - DOMAIN,checkip.amazonaws.com
-  - DOMAIN,ifconfig.me
-  - DOMAIN,ip.sb
-  - DOMAIN,ipinfo.io
+  # 示例：
+  # - DOMAIN-SUFFIX,example.com
+  # - DOMAIN,specific.example.com
