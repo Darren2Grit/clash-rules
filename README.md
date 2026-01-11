@@ -19,16 +19,7 @@
 
 ---
 
-## 🚀 两种使用方式
-
-| 方式 | 难度 | 优点 | 缺点 |
-|-----|------|-----|------|
-| **方式一：下载到本地** | ⭐ 简单 | 3 分钟搞定 | 规则不会自动更新 |
-| **方式二：Fork 项目** | ⭐⭐ 稍复杂 | 规则每天自动更新 | 需要 GitHub 账号 |
-
----
-
-## ⭐ 方式一：下载到本地（推荐新手）
+## 🚀 3 分钟上手
 
 ### 第 1 步：下载配置文件
 
@@ -58,34 +49,7 @@
 4. 点一下导入的配置让它变亮
 5. 打开主界面开关 → 访问 google.com → 成功！🎉
 
----
-
-## ⭐⭐ 方式二：Fork 项目（规则自动更新）
-
-适合想要规则保持最新的用户。AI、加密货币相关规则每天自动同步。
-
-### 第 1 步：Fork 项目
-
-1. 登录 GitHub（没账号就注册一个）
-2. 点本页面右上角 **Fork** → **Create fork**
-
-### 第 2 步：填订阅链接
-
-1. 进入你 Fork 的项目
-2. 点 `config` → `clash-verge.yaml` → 右上角 ✏️ 编辑
-3. 搜索 `YOUR_SUBSCRIPTION_URL`，替换成你的订阅链接
-4. 点 **Commit changes** 保存
-
-### 第 3 步：等 1 分钟
-
-点 **Actions** 标签，等黄圈变 ✅
-
-### 第 4 步：导入 Clash
-
-在 Clash 的「订阅」中导入：
-```
-https://cdn.jsdelivr.net/gh/你的用户名/clash-rules@release/config/clash-verge.yaml
-```
+> ✅ **规则会自动更新！** 配置文件里的规则链接指向本项目的 CDN，Clash 会自动拉取最新规则。
 
 ---
 
@@ -116,14 +80,11 @@ https://cdn.jsdelivr.net/gh/你的用户名/clash-rules@release/config/clash-ver
 **ChatGPT 说地区不支持？**
 → 把「OpenAI」组换成美国节点
 
-**改了配置没生效？**（仅方式二）
-→ 清缓存：`https://purge.jsdelivr.net/gh/你的用户名/clash-rules@release/config/clash-verge.yaml`
-
 ---
 
-## 📁 想自己加规则？
+## 📁 进阶：自定义规则
 
-编辑这两个文件：
+想添加自己的规则？Fork 本项目后编辑：
 - `rules/proxy-extra.yaml` — 需要走代理的网站
 - `rules/direct-extra.yaml` — 需要直连的网站
 
