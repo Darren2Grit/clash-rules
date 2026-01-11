@@ -288,6 +288,36 @@ rule-providers:
     path: ./ruleset/reject.yaml
     interval: 86400
 
+  # ===== 自定义规则（你的 GitHub 仓库）=====
+  ai-extra:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/logicrw/clash-rules@release/rules/ai-extra.yaml"
+    path: ./ruleset/ai-extra.yaml
+    interval: 86400
+
+  crypto:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/logicrw/clash-rules@release/rules/crypto.yaml"
+    path: ./ruleset/crypto.yaml
+    interval: 86400
+
+  direct-extra:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/logicrw/clash-rules@release/rules/direct-extra.yaml"
+    path: ./ruleset/direct-extra.yaml
+    interval: 86400
+
+  proxy-extra:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/logicrw/clash-rules@release/rules/proxy-extra.yaml"
+    path: ./ruleset/proxy-extra.yaml
+    interval: 86400
+
+  # ===== blackmatrix7 规则 =====
   # AI 服务
   openai:
     type: http
@@ -429,6 +459,13 @@ rules:
   # 广告拦截
   - RULE-SET,reject,🛑 广告拦截
 
+  # ===== 自定义规则（优先级最高）=====
+  - RULE-SET,ai-extra,🤖 OpenAI
+  - RULE-SET,crypto,💰 Crypto
+  - RULE-SET,proxy-extra,🚀 节点选择
+  - RULE-SET,direct-extra,🎯 直连
+
+  # ===== blackmatrix7 规则 =====
   # AI 服务
   - RULE-SET,gemini,🇺🇸 美国
   - RULE-SET,copilot,🇺🇸 美国
