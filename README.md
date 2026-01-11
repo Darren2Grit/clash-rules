@@ -19,116 +19,122 @@
 
 ---
 
-## 🚀 5 分钟上手
+## 🚀 两种使用方式
 
-### 准备工作
-
-你需要：
-1. ✅ 一个「机场」的订阅链接（就是你买代理服务后，商家给你的那串网址）
-2. ✅ 一个 GitHub 账号（免费注册：https://github.com）
-3. ✅ 电脑上装好 Clash Verge Rev（下载：https://github.com/clash-verge-rev/clash-verge-rev/releases）
+| 方式 | 难度 | 优点 | 缺点 |
+|-----|------|-----|------|
+| **方式一：下载到本地** | ⭐ 简单 | 3 分钟搞定 | 规则不会自动更新 |
+| **方式二：Fork 项目** | ⭐⭐ 稍复杂 | 规则每天自动更新 | 需要 GitHub 账号 |
 
 ---
 
-### 第 1 步：复制本项目
+## ⭐ 方式一：下载到本地（推荐新手）
 
-点击页面右上角的绿色按钮 **「Fork」** → 点击 **「Create fork」**
+### 第 1 步：下载配置文件
 
-> 💡 这相当于把这个项目复制一份到你自己的账号下
+点击下载：[clash-verge.yaml](https://raw.githubusercontent.com/logicrw/clash-rules/main/config/clash-verge.yaml)
 
----
+> 💡 右键 → 另存为，保存到你能找到的地方
 
-### 第 2 步：填入你的机场订阅
+### 第 2 步：修改订阅链接
 
-1. 打开你 Fork 后的项目（网址变成了 `github.com/你的名字/clash-rules`）
-2. 点进 **config** 文件夹
-3. 点击 **clash-verge.yaml**
-4. 点右上角的 ✏️ 铅笔图标
-5. 按 `Ctrl+F`（Mac 用 `Cmd+F`）搜索 `YOUR_SUBSCRIPTION_URL`
-6. 把它替换成你的机场订阅链接，像这样：
+1. 用记事本（或任意文本编辑器）打开下载的文件
+2. 按 `Ctrl+F` 搜索 `YOUR_SUBSCRIPTION_URL`
+3. 把它替换成你的机场订阅链接：
 
 ```
 替换前：url: "YOUR_SUBSCRIPTION_URL_1"
-替换后：url: "https://xxx.com/你的订阅链接"
+替换后：url: "https://你的机场订阅链接"
 ```
 
-7. 拉到最下面，点绿色按钮 **「Commit changes」** 保存
+4. 如果只有一个机场，把 `airport2` 整段删掉
+5. 保存文件
+
+### 第 3 步：导入 Clash
+
+1. 打开 Clash Verge Rev（[下载地址](https://github.com/clash-verge-rev/clash-verge-rev/releases)）
+2. 点左边「订阅」
+3. 把你改好的文件**拖进去**，或者点「导入」选择文件
+4. 点一下导入的配置让它变亮
+5. 打开主界面开关 → 访问 google.com → 成功！🎉
 
 ---
+
+## ⭐⭐ 方式二：Fork 项目（规则自动更新）
+
+适合想要规则保持最新的用户。AI、加密货币相关规则每天自动同步。
+
+### 第 1 步：Fork 项目
+
+1. 登录 GitHub（没账号就注册一个）
+2. 点本页面右上角 **Fork** → **Create fork**
+
+### 第 2 步：填订阅链接
+
+1. 进入你 Fork 的项目
+2. 点 `config` → `clash-verge.yaml` → 右上角 ✏️ 编辑
+3. 搜索 `YOUR_SUBSCRIPTION_URL`，替换成你的订阅链接
+4. 点 **Commit changes** 保存
 
 ### 第 3 步：等 1 分钟
 
-点击页面上方的 **「Actions」** 标签，等黄色圆圈变成 ✅ 绿色勾
+点 **Actions** 标签，等黄圈变 ✅
 
----
+### 第 4 步：导入 Clash
 
-### 第 4 步：导入到 Clash
-
-1. 打开 Clash Verge Rev
-2. 点左边的 **「订阅」**
-3. 在顶部输入框粘贴：
+在 Clash 的「订阅」中导入：
 ```
-https://cdn.jsdelivr.net/gh/你的GitHub用户名/clash-rules@release/config/clash-verge.yaml
+https://cdn.jsdelivr.net/gh/你的用户名/clash-rules@release/config/clash-verge.yaml
 ```
-4. 点 **「导入」**
-5. 点一下刚导入的配置，让它变亮（选中状态）
-
----
-
-### 第 5 步：开启！
-
-打开 Clash 主界面的开关 → 访问 google.com 试试 → 能打开就成功了 🎉
 
 ---
 
 ## 🎛️ 怎么切换线路？
 
-打开 Clash → 点左边「代理」→ 看到很多组：
+打开 Clash → 点「代理」→ 看到这些组：
 
 | 看到这个 | 它控制什么 | 怎么选 |
 |---------|-----------|--------|
 | 🚀 节点选择 | 大部分国外网站 | 选「自动选择」最省心 |
 | 🤖 OpenAI | ChatGPT | 选 🇺🇸 美国 或 🇯🇵 日本 |
-| 💎 Gemini | Google AI | 选 🇺🇸 美国 或 🇯🇵 日本（不能选香港！）|
-| 🌐 Google | 谷歌搜索等 | 随便选，都能用 |
+| 💎 Gemini | Google AI | 选 🇺🇸 美国 或 🇯🇵 日本（别选香港）|
+| 🌐 Google | 谷歌搜索等 | 随便选 |
 | 📹 YouTube | 看视频 | 选速度快的 |
-| 💰 Crypto | 币安、OKX 等 | 选 🇸🇬 新加坡 |
+| 💰 Crypto | 币安、OKX | 选 🇸🇬 新加坡 |
 | 📺 哔哩哔哩 | B 站 | 保持「直连」|
 
 ---
 
-## ❓ 遇到问题？
+## ❓ 常见问题
 
-### 导入后一个节点都没有？
-→ 你的订阅链接可能填错了，回去检查一下
+**导入后没有节点？**
+→ 订阅链接填错了，检查一下
 
-### 提示「解析错误」？
-→ 编辑时可能不小心删了什么，重新 Fork 一次吧
+**提示解析错误？**
+→ 编辑时格式搞乱了，重新下载再改
 
-### 改了配置没生效？
-→ 访问这个链接清除缓存（把 `你的用户名` 换成你的）：
-```
-https://purge.jsdelivr.net/gh/你的用户名/clash-rules@release/config/clash-verge.yaml
-```
-然后回到 Clash，右键配置 → 更新
+**ChatGPT 说地区不支持？**
+→ 把「OpenAI」组换成美国节点
 
-### ChatGPT 说不支持我的地区？
-→ 去「代理」页面，把「OpenAI」那一组换成美国节点
+**改了配置没生效？**（仅方式二）
+→ 清缓存：`https://purge.jsdelivr.net/gh/你的用户名/clash-rules@release/config/clash-verge.yaml`
 
 ---
 
-## 📁 文件说明（给想折腾的人）
+## 📁 想自己加规则？
 
-```
-config/clash-verge.yaml  ← 主配置，改订阅链接就改这个
-rules/proxy-extra.yaml   ← 想加代理规则就加这里
-rules/direct-extra.yaml  ← 想加直连规则就加这里
-```
+编辑这两个文件：
+- `rules/proxy-extra.yaml` — 需要走代理的网站
+- `rules/direct-extra.yaml` — 需要直连的网站
 
-AI、加密货币相关的规则每天自动更新，不用管。
+格式：
+```yaml
+payload:
+  - DOMAIN-SUFFIX,example.com
+```
 
 ---
 
 ## 🙏 致谢
 
-规则来源：[blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)、[RuleGo](https://github.com/logicrw/RuleGo)
+[blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) · [RuleGo](https://github.com/logicrw/RuleGo)
