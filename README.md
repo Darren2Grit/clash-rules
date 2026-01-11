@@ -90,7 +90,7 @@
 2. 编辑规则文件：
    - `rules/proxy-extra.yaml` — 需要走代理的网站
    - `rules/direct-extra.yaml` — 需要直连的网站
-3. **修改配置文件里的链接**：打开 `config/clash-verge.yaml`，搜索 `logicrw`，全部替换成你的 GitHub 用户名
+3. **只修改这两个链接**：打开 `config/clash-verge.yaml`，找到 `proxy-extra` 和 `direct-extra` 部分，把里面的 `logicrw` 改成你的用户名（其他规则不要改，保持从本项目更新）
 4. 下载修改后的配置文件导入 Clash
 
 规则格式：
