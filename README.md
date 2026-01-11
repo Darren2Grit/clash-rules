@@ -84,11 +84,16 @@
 
 ## 📁 进阶：自定义规则
 
-想添加自己的规则？Fork 本项目后编辑：
-- `rules/proxy-extra.yaml` — 需要走代理的网站
-- `rules/direct-extra.yaml` — 需要直连的网站
+想添加自己的规则？
 
-格式：
+1. Fork 本项目
+2. 编辑规则文件：
+   - `rules/proxy-extra.yaml` — 需要走代理的网站
+   - `rules/direct-extra.yaml` — 需要直连的网站
+3. **修改配置文件里的链接**：打开 `config/clash-verge.yaml`，搜索 `logicrw`，全部替换成你的 GitHub 用户名
+4. 下载修改后的配置文件导入 Clash
+
+规则格式：
 ```yaml
 payload:
   - DOMAIN-SUFFIX,example.com
