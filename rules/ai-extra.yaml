@@ -1,7 +1,7 @@
-# AI 服务规则（基于 logicrw/RuleGo）
-# 包含 OpenAI、Claude、Gemini、Copilot 等所有 AI 服务
+# AI 服务规则（自动同步自 logicrw/RuleGo）
+# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/AI.list
+# 同步时间: 2026-01-11 03:46:51 UTC
 payload:
-  # Apple Intelligence
   - DOMAIN-SUFFIX,smoot.apple.com
   - DOMAIN,apple-relay.apple.com
   - DOMAIN,apple-relay.cloudflare.com
@@ -11,8 +11,6 @@ payload:
   - DOMAIN,guzzoni.apple.com
   - DOMAIN,gspe1-ssl.ls.apple.com
   - DOMAIN-SUFFIX,apps.mzstatic.com
-
-  # OpenAI / ChatGPT
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
@@ -31,70 +29,40 @@ payload:
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,openaiapi
   - DOMAIN-KEYWORD,openaicom
-
-  # Anthropic / Claude
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-KEYWORD,claude
-
-  # Perplexity
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,pplx.ai
   - DOMAIN,pplx-res.cloudinary.com
-
-  # xAI / Grok
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
-
-  # Groq
   - DOMAIN-SUFFIX,groq.com
-
-  # Meta AI
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN,imagine.meta.com
-
-  # Microsoft Copilot
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,sydney.bing.com
   - DOMAIN,www.bing.com
-
-  # GitHub Copilot
   - DOMAIN-SUFFIX,githubcopilot.com
-
-  # Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
-
-  # Cursor
   - DOMAIN-SUFFIX,cursor.com
   - DOMAIN-SUFFIX,cursor.sh
   - DOMAIN-SUFFIX,cursorapi.com
   - DOMAIN-SUFFIX,cursor-cdn.com
-
-  # JetBrains AI
   - DOMAIN-SUFFIX,grazie.ai
-
-  # POE
   - DOMAIN-SUFFIX,poe.com
-
-  # Midjourney
   - DOMAIN-SUFFIX,midjourney.com
-
-  # Dify
   - DOMAIN-SUFFIX,dify.ai
-
-  # Jasper / Clipdrop
   - DOMAIN-SUFFIX,jasper.ai
   - DOMAIN-SUFFIX,clipdrop.co
-
-  # OpenArt
   - DOMAIN-SUFFIX,openart.ai
-
-  # Doubao (字节跳动)
   - DOMAIN-SUFFIX,cici.com
   - DOMAIN-SUFFIX,ciciai.com
   - DOMAIN-SUFFIX,dola.com
   - DOMAIN-SUFFIX,byteoversea.com
-
-  # Hugging Face
-  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN,open-ai-chat-omega.vercel.app
+  - DOMAIN-SUFFIX,yourware.so
+  - DOMAIN-SUFFIX,genspark.ai
+  - DOMAIN-SUFFIX,diabrowser.engineering
+  - DOMAIN,app.hume.ai

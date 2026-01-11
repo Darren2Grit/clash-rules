@@ -1,7 +1,7 @@
-# Google AI (Gemini/Bard/NotebookLM)
-# 基于 logicrw/RuleGo GenAI/Google.list
+# Google AI 规则（自动同步自 logicrw/RuleGo）
+# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/GenAI/Google.list
+# 同步时间: 2026-01-11 03:46:51 UTC
 payload:
-  # Entrypoints / Web Apps
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,aistudio.google.com
   - DOMAIN-SUFFIX,makersuite.google.com
@@ -17,25 +17,17 @@ payload:
   - DOMAIN-SUFFIX,accounts.google.com.hk
   - DOMAIN-SUFFIX,accounts.google.com.tw
   - DOMAIN-SUFFIX,accounts.google.com.jp
-
-  # DeepMind
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deepmind.google
-
-  # NotebookLM
   - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,notebooklm.google.com
-
-  # Core APIs / Backends
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
   - DOMAIN-SUFFIX,geller-pa.googleapis.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
   - DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
-  - DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com  
   - DOMAIN-SUFFIX,pa.googleapis.com
   - DOMAIN-SUFFIX,clients6.google.com
-
-  # Keyword fallbacks
   - DOMAIN-KEYWORD,gemini
   - DOMAIN-KEYWORD,bard
   - DOMAIN-KEYWORD,notebooklm

@@ -1,34 +1,35 @@
-# 加密货币交易所和服务
-# 基于 logicrw/RuleGo Crypto.list
+# 加密货币规则（自动同步自 logicrw/RuleGo）
+# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/Crypto.list
+# 同步时间: 2026-01-11 03:46:51 UTC
 payload:
-  # 主流交易所
-  - DOMAIN-SUFFIX,coinbase.com
-  - DOMAIN-SUFFIX,kraken.com
-  - DOMAIN-SUFFIX,gemini.com
-  - DOMAIN-SUFFIX,bitstamp.net
+  - DOMAIN-SUFFIX,aicoin.com
+  - DOMAIN-SUFFIX,backpack.exchange
+  - DOMAIN-SUFFIX,bitcointalk.org
   - DOMAIN-SUFFIX,bitfinex.com
   - DOMAIN-SUFFIX,bitflyer.com
   - DOMAIN-SUFFIX,bithumb.com
-  - DOMAIN-SUFFIX,upbit.com
-  - DOMAIN-SUFFIX,probit.com
+  - DOMAIN-SUFFIX,bitstamp.net
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,coingecko.com
+  - DOMAIN-SUFFIX,coinmarketcap.com
+  - DOMAIN-SUFFIX,crypto.com
+  - DOMAIN-SUFFIX,dydx.exchange
+  - DOMAIN-SUFFIX,etherscan.io
   - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gemini.com
+  - DOMAIN-SUFFIX,kraken.com
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,mexc.com
-  - DOMAIN-SUFFIX,crypto.com
-  - DOMAIN-SUFFIX,backpack.exchange
-
-  # Binance
+  - DOMAIN-SUFFIX,probit.com
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,upbit.com
   - DOMAIN-SUFFIX,binance.com
   - DOMAIN-SUFFIX,binance.info
   - DOMAIN-SUFFIX,bnbstatic.com
   - DOMAIN-SUFFIX,bntrace.com
   - DOMAIN-SUFFIX,yingwangtech.cloud
-
-  # Bitget
   - DOMAIN-SUFFIX,bitget.com
   - DOMAIN-SUFFIX,bitget.site
-
-  # Bybit
   - DOMAIN-SUFFIX,byabcde.com
   - DOMAIN-SUFFIX,bybdc6.com
   - DOMAIN-SUFFIX,bybit.biz
@@ -37,37 +38,16 @@ payload:
   - DOMAIN-SUFFIX,bybitglobal.com
   - DOMAIN-SUFFIX,bybit-global.com
   - DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
-
-  # OKX
   - DOMAIN-SUFFIX,okx.com
   - DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
-
-  # DeFi / DEX
-  - DOMAIN-SUFFIX,uniswap.org
-  - DOMAIN-SUFFIX,dydx.exchange
-
-  # 区块链浏览器
-  - DOMAIN-SUFFIX,etherscan.io
-
-  # 行情数据
-  - DOMAIN-SUFFIX,coingecko.com
-  - DOMAIN-SUFFIX,coinmarketcap.com
-  - DOMAIN-SUFFIX,aicoin.com
   - DOMAIN-SUFFIX,coinglasscdn.com
-
-  # 资讯 / 社区
-  - DOMAIN-SUFFIX,bitcointalk.org
-  - DOMAIN-SUFFIX,foresightnews.pro
   - DOMAIN-SUFFIX,cryptohunt.ai
-
-  # 工具 / 服务
+  - DOMAIN-SUFFIX,foresightnews.pro
   - DOMAIN-SUFFIX,xxyy.io
-  - DOMAIN-SUFFIX,signalplus.com
-
-  # 通用服务
   - DOMAIN-SUFFIX,buzzing.cc
   - DOMAIN-SUFFIX,enjoy.bot
   - DOMAIN-SUFFIX,futunn.com
   - DOMAIN-SUFFIX,go.runba.cyou
   - DOMAIN-SUFFIX,mypikpak.com
+  - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,yahoo.com
