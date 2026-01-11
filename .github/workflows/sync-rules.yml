@@ -1,0 +1,68 @@
+name: Sync Rules from RuleGo
+
+on:
+  schedule:
+    # 每天 UTC 0:00 运行（北京时间 8:00）
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync ai-extra.yaml
+        run: |
+          echo "# AI 服务规则（自动同步自 logicrw/RuleGo）" > rules/ai-extra.yaml
+          echo "# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/AI.list" >> rules/ai-extra.yaml
+          echo "# 同步时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> rules/ai-extra.yaml
+          echo "payload:" >> rules/ai-extra.yaml
+          curl -sL "https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/AI.list" | \
+            grep -v '^#' | grep -v '^$' | \
+            sed 's/,extended-matching//g' | \
+            sed 's/^/  - /' >> rules/ai-extra.yaml
+
+      - name: Sync gemini.yaml
+        run: |
+          echo "# Google AI 规则（自动同步自 logicrw/RuleGo）" > rules/gemini.yaml
+          echo "# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/GenAI/Google.list" >> rules/gemini.yaml
+          echo "# 同步时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> rules/gemini.yaml
+          echo "payload:" >> rules/gemini.yaml
+          curl -sL "https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/GenAI/Google.list" | \
+            grep -v '^#' | grep -v '^$' | \
+            sed 's/,extended-matching//g' | \
+            sed 's/^/  - /' >> rules/gemini.yaml
+
+      - name: Sync crypto.yaml
+        run: |
+          echo "# 加密货币规则（自动同步自 logicrw/RuleGo）" > rules/crypto.yaml
+          echo "# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/Crypto.list" >> rules/crypto.yaml
+          echo "# 同步时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> rules/crypto.yaml
+          echo "payload:" >> rules/crypto.yaml
+          curl -sL "https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/Crypto.list" | \
+            grep -v '^#' | grep -v '^$' | \
+            sed 's/,extended-matching//g' | \
+            sed 's/^/  - /' >> rules/crypto.yaml
+
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet rules/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add rules/
+          git commit -m "chore: 自动同步规则 $(date -u '+%Y-%m-%d')"
+          git push
