@@ -233,6 +233,16 @@ proxy-groups:
       - "🇸🇬 新加坡"
       - "🇨🇳 台湾"
 
+  # Gemini
+  - name: "💎 Gemini"
+    type: select
+    proxies:
+      - "🇺🇸 美国"
+      - "🇯🇵 日本"
+      - "🇸🇬 新加坡"
+      - "🇨🇳 台湾"
+      - "🇭🇰 香港"
+
   # Twitter
   - name: "🐦 Twitter"
     type: select
@@ -294,6 +304,13 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/logicrw/clash-rules@release/rules/ai-extra.yaml"
     path: ./ruleset/ai-extra.yaml
+    interval: 86400
+
+  gemini:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/logicrw/clash-rules@release/rules/gemini.yaml"
+    path: ./ruleset/gemini.yaml
     interval: 86400
 
   crypto:
@@ -424,6 +441,7 @@ rules:
   - RULE-SET,reject,🛑 广告拦截
 
   # ===== 自定义规则（优先级最高）=====
+  - RULE-SET,gemini,💎 Gemini
   - RULE-SET,ai-extra,🤖 OpenAI
   - RULE-SET,crypto,💰 Crypto
   - RULE-SET,proxy-extra,🚀 节点选择

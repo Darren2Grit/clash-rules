@@ -38,18 +38,6 @@ payload:
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-KEYWORD,claude
 
-  # Google AI (Gemini/Bard)
-  - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN-SUFFIX,aistudio.google.com
-  - DOMAIN-SUFFIX,gemini.google.com
-  - DOMAIN-SUFFIX,bard.google.com
-  - DOMAIN-SUFFIX,makersuite.google.com
-  - DOMAIN-SUFFIX,deepmind.com
-  - DOMAIN-SUFFIX,deepmind.google
-  - DOMAIN,generativelanguage.googleapis.com
-  - DOMAIN-KEYWORD,gemini
-  - DOMAIN-KEYWORD,bard
-
   # Perplexity
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,pplx.ai
