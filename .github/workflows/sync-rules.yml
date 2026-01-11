@@ -18,7 +18,7 @@ jobs:
 
       - name: Sync ai-extra.yaml
         run: |
-          echo "# AI 服务规则（自动同步自 logicrw/RuleGo）" > rules/ai-extra.yaml
+          echo "# AI 服务补充规则" > rules/ai-extra.yaml
           echo "# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/AI.list" >> rules/ai-extra.yaml
           echo "# 同步时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> rules/ai-extra.yaml
           echo "payload:" >> rules/ai-extra.yaml
@@ -29,7 +29,7 @@ jobs:
 
       - name: Sync gemini.yaml
         run: |
-          echo "# Google AI 规则（自动同步自 logicrw/RuleGo）" > rules/gemini.yaml
+          echo "# Google AI 规则" > rules/gemini.yaml
           echo "# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/GenAI/Google.list" >> rules/gemini.yaml
           echo "# 同步时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> rules/gemini.yaml
           echo "payload:" >> rules/gemini.yaml
@@ -40,7 +40,7 @@ jobs:
 
       - name: Sync crypto.yaml
         run: |
-          echo "# 加密货币规则（自动同步自 logicrw/RuleGo）" > rules/crypto.yaml
+          echo "# 加密货币规则" > rules/crypto.yaml
           echo "# 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/Crypto.list" >> rules/crypto.yaml
           echo "# 同步时间: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> rules/crypto.yaml
           echo "payload:" >> rules/crypto.yaml
