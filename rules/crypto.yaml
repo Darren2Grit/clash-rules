@@ -1,0 +1,39 @@
+# 加密货币交易所和服务
+payload:
+  # 主流交易所
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.org
+  - DOMAIN-SUFFIX,binance.us
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,kucoin.com
+  - DOMAIN-SUFFIX,bitget.com
+  - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,htx.com
+
+  # DeFi & DEX
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,dydx.exchange
+  - DOMAIN-SUFFIX,aave.com
+  - DOMAIN-SUFFIX,curve.fi
+  - DOMAIN-SUFFIX,1inch.io
+  - DOMAIN-SUFFIX,sushi.com
+
+  # 区块链浏览器
+  - DOMAIN-SUFFIX,etherscan.io
+  - DOMAIN-SUFFIX,bscscan.com
+  - DOMAIN-SUFFIX,polygonscan.com
+  - DOMAIN-SUFFIX,arbiscan.io
+
+  # 行情数据
+  - DOMAIN-SUFFIX,coingecko.com
+  - DOMAIN-SUFFIX,coinmarketcap.com
+  - DOMAIN-SUFFIX,tradingview.com
+
+  # 钱包
+  - DOMAIN-SUFFIX,metamask.io
+  - DOMAIN-SUFFIX,phantom.app
+  - DOMAIN-SUFFIX,trustwallet.com

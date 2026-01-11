@@ -1,0 +1,64 @@
+# AI 服务补充规则（blackmatrix7 OpenAI 规则的补充）
+# 包含 Claude、Gemini、Copilot 等
+payload:
+  # Anthropic Claude
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN,claude.ai
+
+  # Google AI (Gemini/Bard)
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,makersuite.google.com
+  - DOMAIN-SUFFIX,deepmind.com
+  - DOMAIN-SUFFIX,deepmind.google
+  - DOMAIN,generativelanguage.googleapis.com
+  - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,bard
+
+  # Microsoft Copilot
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN,copilot.microsoft.com
+  - DOMAIN-SUFFIX,sydney.bing.com
+  - DOMAIN,www.bing.com
+
+  # GitHub Copilot
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,copilot.github.com
+
+  # xAI Grok
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN,grok.x.ai
+
+  # Perplexity
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,pplx.ai
+
+  # Cursor
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,cursor.sh
+
+  # Midjourney
+  - DOMAIN-SUFFIX,midjourney.com
+
+  # POE
+  - DOMAIN-SUFFIX,poe.com
+
+  # Meta AI
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN,imagine.meta.com
+
+  # JetBrains AI
+  - DOMAIN-SUFFIX,grazie.ai
+
+  # Dify
+  - DOMAIN-SUFFIX,dify.ai
+
+  # Groq
+  - DOMAIN-SUFFIX,groq.com
+
+  # Hugging Face
+  - DOMAIN-SUFFIX,huggingface.co

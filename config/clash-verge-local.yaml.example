@@ -1,0 +1,15 @@
+# 本地配置文件示例
+# 复制此文件为 clash-verge-local.yaml，然后填入你的订阅链接
+# clash-verge-local.yaml 已被 .gitignore 忽略，不会上传到 GitHub
+
+# 使用方法：
+# 1. cp clash-verge-local.yaml.example clash-verge-local.yaml
+# 2. 编辑 clash-verge-local.yaml，替换订阅链接
+# 3. 导入 clash-verge-local.yaml 到 Clash Verge Rev
+
+# 订阅链接配置（替换 YOUR_SUBSCRIPTION_URL）：
+# proxy-providers:
+#   airport1:
+#     url: "https://your-airport1-subscription-url"
+#   airport2:
+#     url: "https://your-airport2-subscription-url"
