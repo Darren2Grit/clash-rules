@@ -1,6 +1,6 @@
 # AI 服务补充规则
 # 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/AI.list
-# 同步时间: 2026-01-27 01:39:52 UTC
+# 同步时间: 2026-01-28 01:26:26 UTC
 payload:
   - DOMAIN-SUFFIX,smoot.apple.com
   - DOMAIN,apple-relay.apple.com
