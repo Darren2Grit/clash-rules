@@ -1,6 +1,6 @@
 # 加密货币规则
 # 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/Crypto.list
-# 同步时间: 2026-02-21 01:46:05 UTC
+# 同步时间: 2026-02-22 01:53:44 UTC
 payload:
   - DOMAIN-SUFFIX,aicoin.com
   - DOMAIN-SUFFIX,backpack.exchange
