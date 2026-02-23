@@ -1,6 +1,6 @@
 # Google AI 规则
 # 源文件: https://raw.githubusercontent.com/logicrw/RuleGo/patch-1/Surge/Ruleset/Extra/GenAI/Google.list
-# 同步时间: 2026-02-22 01:53:44 UTC
+# 同步时间: 2026-02-23 01:54:52 UTC
 payload:
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,aistudio.google.com
