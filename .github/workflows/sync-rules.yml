@@ -52,7 +52,7 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          if git diff --quiet rules/; then
+          if git diff -I'^# 同步时间:' --quiet rules/; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
