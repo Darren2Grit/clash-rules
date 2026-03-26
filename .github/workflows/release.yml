@@ -22,7 +22,17 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          
+          # 获取远程 release 分支以进行对比
+          if git fetch origin release; then
+            # 如果 rules/ 和 config/ 没有变化，跳过执行
+            if git diff --quiet origin/release HEAD -- rules/ config/; then
+              echo "No changes in rules/ or config/ compared to the release branch. Skipping push."
+              exit 0
+            fi
+          fi
+          
           git checkout -B release
           git add -f rules/ config/
-          git commit -m "Release rules $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes"
+          git commit -m "Release rules $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push -f origin release
