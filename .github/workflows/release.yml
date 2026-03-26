@@ -25,8 +25,8 @@ jobs:
           
           # 获取远程 release 分支以进行对比
           if git fetch origin release; then
-            # 如果 rules/ 和 config/ 没有变化，跳过执行
-            if git diff --quiet origin/release HEAD -- rules/ config/; then
+            # 如果 rules/ 和 config/ 除同步时间外没有实质变化，跳过执行
+            if git diff -I'^# 同步时间:' --quiet origin/release HEAD -- rules/ config/; then
               echo "No changes in rules/ or config/ compared to the release branch. Skipping push."
               exit 0
             fi
