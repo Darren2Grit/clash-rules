@@ -1,0 +1,14 @@
+# 自定义直连规则
+# 在这里添加你需要直连的域名
+payload:
+  - DOMAIN-SUFFIX,allschool.com
+  - DOMAIN-SUFFIX,huohua.cn
+  - DOMAIN-SUFFIX,pollyapi.cn
+  - DOMAIN-SUFFIX,pollyenglish.cn
+  - DOMAIN-SUFFIX,spkgo.com
+  - DOMAIN-SUFFIX,sparkenglish.com
+  - DOMAIN-SUFFIX,lingostar.me
+  - DOMAIN-SUFFIX,api-huacloud.net 
+  # 示例：
+  # - DOMAIN-SUFFIX,example.com
+  # - DOMAIN,specific.example.com
