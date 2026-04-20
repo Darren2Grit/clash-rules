@@ -1,1 +1,7 @@
 
+payload:
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,datadoghq.com
+  - DOMAIN-SUFFIX,anthropic.com
+  - PROCESS-NAME,claude
