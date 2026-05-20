@@ -10,8 +10,8 @@ payload:
   - DOMAIN-SUFFIX,lingostar.me
   - DOMAIN-SUFFIX,huohua.io
   - DOMAIN-SUFFIX,pollyeng.net
-  - IP-CIDR,172.16.0.0/12
-  - IP-CIDR,10.0.0.0/8
+  - IP-CIDR,172.16.0.0/12,no-resolve
+  - IP-CIDR,10.0.0.0/8,no-resolve
   # 示例：
   # - DOMAIN-SUFFIX,example.com
   # - DOMAIN,specific.example.com
