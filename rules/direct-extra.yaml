@@ -2,7 +2,7 @@
 # 在这里添加你需要直连的域名
 payload:
   - DOMAIN-SUFFIX,ns.ouyangtao.net
-  - DOMAIN-SUFFIX,api-huacloud.net 
+  - DOMAIN-SUFFIX,api-huacloud.net
   - DOMAIN-SUFFIX,hsbc.com.hk
 
  
