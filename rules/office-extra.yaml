@@ -2,7 +2,7 @@
 # 在这里添加你需要直连的域名
 payload:
   - DOMAIN-SUFFIX,allschool.com
-  - DOMAIN-SUFFIX,huohua.cn
+  - DOMAIN-SUFFIX,bg.huohua.cn
   #- DOMAIN-SUFFIX,pollyapi.cn
   #- DOMAIN-SUFFIX,bg.pollyenglish.cn
   - DOMAIN-SUFFIX,spkgo.com
