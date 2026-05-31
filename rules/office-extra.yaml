@@ -4,7 +4,7 @@ payload:
   - DOMAIN-SUFFIX,allschool.com
   - DOMAIN-SUFFIX,bg.huohua.cn
   #- DOMAIN-SUFFIX,pollyapi.cn
-  #- DOMAIN-SUFFIX,bg.pollyenglish.cn
+  - DOMAIN-SUFFIX,qa.pollyenglish.cn
   - DOMAIN-SUFFIX,spkgo.com
   - DOMAIN-SUFFIX,sparkenglish.com
   - DOMAIN-SUFFIX,lingostar.me
